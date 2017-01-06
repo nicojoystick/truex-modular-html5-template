@@ -25,6 +25,8 @@
  */
 var TXConfig = (function () {
 
+	console.log("TX Config");
+
 	/**
 	 * ----------------------------------
 	 * START ASSET PRELOADING
@@ -68,7 +70,7 @@ var TXConfig = (function () {
 
 
 	/**
-	 * Will hold our markup once it has been loaded via Ajax.
+	 * Will hold our html markup once it has been loaded via Ajax.
 	 */
 	var markupContainer;
 	/**
@@ -82,7 +84,7 @@ var TXConfig = (function () {
 	 */
 	var totalAssets = 1 + creativeImages.length + creativeScripts.length + creativeCSS.length;
 	/**
-	 * This is the flag that checks if ENGAGEMENT_STRTED
+	 * This is the flag that checks if ENGAGEMENT_STARTED
 	 * has fired once before all the assets have been loaded.
 	 */
 	var engagementStartedFiredOnce = false;
@@ -352,8 +354,8 @@ var TXVideo = (function () {
 
 	/**
 	 * Destroys the video player and
-	 * removes any event listened that
-	 * are tied into it.
+	 * removes any event listener that
+	 * are tied to it.
 	 */
 	function destroy () {
 
@@ -361,7 +363,7 @@ var TXVideo = (function () {
 		 * Save a copy of the video player markup.
 		 */
 		var videoPlayerMarkup = videoPlayer.html();
-		videoPlayer.removeAttr( 'autoplay' );
+		videoPlayerMarkup = $( videoPlayerMarkup ).removeAttr( 'autoplay' );
 
 		/**
 		 * Remove video events.
@@ -537,7 +539,6 @@ var TXCreative = (function () {
 	 */
 	function render () {
 
-		
 	}
 
 	/**
