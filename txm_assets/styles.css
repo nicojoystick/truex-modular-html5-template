@@ -1,0 +1,79 @@
+#txm_adContainer{
+	position: relative;
+	width: 960px;
+	height: 500px;
+	cursor: pointer;
+	background-color: #999;
+}
+
+#txm_current_step, #txm_current_time, #txm_current_interactions{
+	float: left;
+	margin-left: 10px;
+}
+
+#txm_current_interactions{
+	margin-left: 6px;
+}
+
+#txm_logs, #txm_current_step, #txm_current_time, #txm_current_interactions{
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", "Segoe UI", "Roboto Light", "Roboto-Light", "RobotoLight", Helvetica, Arial, sans-serif;
+	font-weight: 300;
+	color: #222222;
+	margin-top: 10px;
+}
+
+#txm_logs{
+	padding-top: 10px;
+}
+
+#txm_logs, #txm_logs .txm_log{
+	clear: both;
+}
+
+#txm_logs span{
+	padding: 2px !important;
+	margin: 2px !important;
+}
+
+#txm_logs .txm_interaction{
+	background-color: #56787a;
+	color: #FFF;
+}
+
+#txm_logs .txm_completion{
+	background-color: #888888;
+	color: #FFF;
+}
+
+#txm_logs .txm_step{
+	background-color: #aaaaaa;
+}
+
+#txm_logs .txm_step.txm_navigation{
+	background-color: #f6f15c;
+}
+
+#txm_logs .txm_type{
+	background-color: #f6650d;
+}
+
+#txm_logs .txm_label{
+	background-color: #f6d023;
+}
+
+#txm_logs .txm_value{
+	background-color: #039fa6;
+}
+
+#txm_logs .txm_tagdata{
+	background-color: #8dd83d;
+}
+
+#txm_logs .txm_tag{
+	background-color: #a8431d;
+	color: #FFF;
+}
+
+#txm_logs .txm_log{
+	margin: 7px 2px;
+}
