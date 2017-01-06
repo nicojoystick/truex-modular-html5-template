@@ -59,7 +59,7 @@ var TXCreative = (function () {
 	}
 })();
 ```
-3.) That's all there is to it. Run the **index.html** from the root directory to test your creative.
+3.) That's all there is to it. Run the **index.html** from the root directory to test your creative locally.
 
 ##Template Features
 * It abstracts Truex's boilerplate codes from the main ad's logic.
