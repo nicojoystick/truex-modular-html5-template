@@ -497,7 +497,7 @@ var TXVideo = (function () {
 		else if ( !videoMidpoint && progress >= 0.50 ) {
 
 			videoMidpoint = true;
-			TXM.api.track('multimedia', 'video_second_quartile', '[Vid Q1]');
+			TXM.api.track('multimedia', 'video_second_quartile', '[Vid Q2]');
 		}
 
 		else if ( !videoThirdQuartile && progress >= 0.75 ) {
