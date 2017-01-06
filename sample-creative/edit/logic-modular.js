@@ -1,6 +1,7 @@
 /**
  * ---------------------------------------------------
- * TrueX HTML5 Modular Template V1.0
+ * TrueX HTML5 Modular Template V1.0 By Nico Cardenas
+ * 
  * A modularized version of our current Truex HTML5
  * template created by Antonio M. Quitoriano.
  * ---------------------------------------------------
