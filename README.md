@@ -61,7 +61,7 @@ var TXCreative = (function () {
 ##Template Features
 * It abstracts Truex's boilerplate codes from the main ad's logic.
 * Helps the developer to focus more on coding the creative's main logic.
-* Creates a **centralize** location for custom codes.
+* Creates a **central** location for custom codes.
 * **Modular** approach for readability and extensibility.
 
 ##Template Modules
