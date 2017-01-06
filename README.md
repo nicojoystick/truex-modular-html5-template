@@ -71,7 +71,7 @@ var TXCreative = (function () {
 Currently, this template is divided into 4 modules:
 
 ####TXConfig Module
-The TXConfig module is the configuration / settings of every TrueX HTML5 builds. This is where you will set all the stuff your creative will use like images, sounds, external js, and css.
+The TXConfig module is the configuration / settings of every TrueX HTML5 builds. This is where you will set all the stuff your creative will use like images, sounds, js, css, and html markup.
 
 ####TXAd Module
 The TXAd module is where the main initialization of the TrueX Ad takes place. These includes anything from the actual loading of assets (images, sounds, etc) to setting up the "Ad Lifecycle" of your creative.
