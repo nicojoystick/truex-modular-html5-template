@@ -4,6 +4,8 @@ A template to help simplify the process of creating Truex ads in HTML5.
 ##How To Use
 1.) Locate the **TXConfig** module **(line #26)** inside **edit/logic-modular.js** and start updating the following variables. Please note that the urls that you will be using must be from the Truex server via **Asset Uploader**. 
 
+>Note: When testing the creative locally, you can use the relative urls of your css and js files and then just update it to their absolute values once you upload it to Truex servers.
+
 ```Javascript
 /**
  * Place all your image URLS here.
@@ -48,22 +50,13 @@ var TXCreative = (function () {
 	function render () {
 
 	}
-
-	/**
-	 * Expose TXCreative's API to outside modules.
-	 */
-	return {
-
-		render : render
-	}
-
 })();
 ```
 3.) That's all there is to it. Run the **index.html** from the root directory to test your creative.
 
 ##Template Features
 * It abstracts Truex's boilerplate codes from the main ad's logic.
-* Helps the developer to focus more on coding the creative.
+* Helps the developer to focus more on coding the creative's main logic.
 * Creates a **centralize** location for custom codes.
 * **Modular** approach for readability and extensibility.
 
