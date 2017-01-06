@@ -366,7 +366,7 @@ var TXVideo = (function () {
 		 * Save a copy of the video player markup.
 		 */
 		var videoPlayerMarkup = videoPlayer.html();
-		videoPlayer.removeAttr( 'autoplay' );
+		videoPlayerMarkup = $( videoPlayerMarkup ).removeAttr( 'autoplay' );
 
 		/**
 		 * Remove video events.
