@@ -36,8 +36,7 @@ var creativeCSS =
  */
 var creativeHTML = 'absolute-url-of-your-markup.html';
 ```	
-2. Locate the **TXCreative** module and start writing your whole creative's logic inside the **render()** function.
-You can also write your own creative initialization function (ie: init(), startAd(), etc) and call it inside the **render()** function.
+2. Locate the **TXCreative** module **(line #537)** inside **edit/logic-modular.js** and start writing your whole creative's logic inside the **render()** function. You can also write your own creative initialization function (ie: init(), startAd(), etc) and call it inside the **render()** function.
 
 ```Javascript
 var TXCreative = (function () {
