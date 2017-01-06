@@ -81,6 +81,6 @@ The TXVideo Module handles everything about **video loading** and **quartiles tr
 _Vast Video support to be implemented._
 
 ####TXCreative Module
-The TXCreative Module is the **MEAT** of your creative. This is where all of your **CUSTOM** codes will go, meaning, all of your creative's "logic" will be run through here. This makes it much more easier to build an ad since you have a "central" location of all your custom codes. 
+The TXCreative Module is the **MEAT** of your creative. This is where all of your **CUSTOM** codes will go, meaning, all of your creative's "logic" will be run through here. This makes it much more easier to build an ad since you have a "central" location for all your custom codes. 
 
 You can also write your main creative's logic on a separate javascript file and call it's init function inside this module.
