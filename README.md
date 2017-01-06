@@ -79,5 +79,5 @@ The TXVideo Module handles everything about **video loading** and **quartiles tr
 ####TXCreative Module
 The TXCreative Module is the **MEAT** of your creative. This is where all of your **CUSTOM** codes will go, meaning, all of your creative's "logic" will be run through here. This makes it much more easier to build an ad since you have a "central" location of all your custom codes.
 
-This template is a **work in progress**. I'm not a born super coder so feel free to improve/fix/optimize it :D
+> This template is a **work in progress**. I'm not a born super coder so feel free to improve/fix/optimize it :D
 Based on **Antonio M. Quitoriano's** awesome TXM Template.
