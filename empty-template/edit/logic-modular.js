@@ -70,7 +70,7 @@ var TXConfig = (function () {
 
 
 	/**
-	 * Will hold our html markup once it has been loaded via Ajax.
+	 * Will hold our markup once it has been loaded via Ajax.
 	 */
 	var markupContainer;
 	/**
@@ -84,7 +84,7 @@ var TXConfig = (function () {
 	 */
 	var totalAssets = 1 + creativeImages.length + creativeScripts.length + creativeCSS.length;
 	/**
-	 * This is the flag that checks if ENGAGEMENT_STARTED
+	 * This is the flag that checks if ENGAGEMENT_STRTED
 	 * has fired once before all the assets have been loaded.
 	 */
 	var engagementStartedFiredOnce = false;
@@ -103,7 +103,7 @@ var TXConfig = (function () {
 		creativeScripts            : creativeScripts,
 		creativeCSS                : creativeCSS,
 		creativeHTML               : creativeHTML
-	}
+	};
 
 })();
 
@@ -128,7 +128,7 @@ var TXAd = (function () {
 	 */
 	function init () {
 
-		console.log( 'AD START' )
+		console.log( 'AD START' );
 
 		TXM.dispatcher.addEventListenerOnce( 'ENGAGEMENT_STARTED', adStart);
 		TXM.dispatcher.addEventListenerOnce( 'ENGAGEMENT_ENDED', adEnd );
@@ -193,11 +193,14 @@ var TXAd = (function () {
 
 			var url = urls[i];
 
-			$( '<img />' ).attr( 'src', url ).load( function () {
-				updateAssetsLoaded();
-			});
+			$( '<img />' ).attr( 'src', url ).load( onImageLoaded );
 		}
 	}
+    
+    function onImageLoaded() {
+
+		updateAssetsLoaded();
+	} 
 
 	/**
 	 * Function that will load all the
@@ -210,10 +213,13 @@ var TXAd = (function () {
 
 			var url = urls[i];
 
-			$.getScript( url, function () {
-				updateAssetsLoaded();
-			});
+			$.getScript( url, onScriptLoaded );
 		}
+	}
+    
+    function onScriptLoaded() {
+    	
+		updateAssetsLoaded();
 	}
 
 	/**
@@ -230,13 +236,18 @@ var TXAd = (function () {
 
 				url      : url,
 				dataType : 'text',
-				success  : function ( data ) {
-					$( '<style></style>' ).append( data ).appendTo( 'head' );
-					updateAssetsLoaded();
-				} 
+				success  : onCSSLoaded
+                
 			});
 		}
 	}
+    
+    function onCSSLoaded( data ) {
+        
+		$("<style></style").append( data ).appendTo( 'head' );
+		updateAssetsLoaded();
+	
+    }
 
 	/**
 	 * Function that will load your 
@@ -248,12 +259,17 @@ var TXAd = (function () {
 
 				url      : url,
 				dataType : 'text',
-				success  : function ( data ) {
-					TXConfig.markupContainer = data;
-					updateAssetsLoaded();
-				} 
+				success  : onHTMLLoaded
+            
 			});
 	}
+    
+    function onHTMLLoaded( data ) {
+        
+		TXConfig.markupContainer = data;
+		updateAssetsLoaded();
+	
+    }
 
 	/**
 	 * Function that will update the 
@@ -285,7 +301,7 @@ var TXAd = (function () {
 	return {
 
 		init : init
-	}
+	};
 
 })();
 
@@ -354,8 +370,8 @@ var TXVideo = (function () {
 
 	/**
 	 * Destroys the video player and
-	 * removes any event listener that
-	 * are tied to it.
+	 * removes any event listened that
+	 * are tied into it.
 	 */
 	function destroy () {
 
@@ -413,7 +429,7 @@ var TXVideo = (function () {
 
 		if ( videoStart ) {
 
-			return
+			return;
 		}
 
 		videoStart = true;
@@ -512,7 +528,7 @@ var TXVideo = (function () {
 		init      : init,
 		destroy   : destroy,
 		playVideo : playVideo
-	}
+	};
 
 })();
 
@@ -547,7 +563,7 @@ var TXCreative = (function () {
 	return {
 
 		render : render
-	}
+	};
 
 })();
 
