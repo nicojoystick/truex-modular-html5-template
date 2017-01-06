@@ -78,6 +78,7 @@ The TXAd module is where the main initialization of the TrueX Ad takes place. Th
 
 ####TXVideo Module
 The TXVideo Module handles everything about **video loading** and **quartiles tracking**.
+_Vast Video support to be implemented._
 
 ####TXCreative Module
 The TXCreative Module is the **MEAT** of your creative. This is where all of your **CUSTOM** codes will go, meaning, all of your creative's "logic" will be run through here. This makes it much more easier to build an ad since you have a "central" location of all your custom codes. 
