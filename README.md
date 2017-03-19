@@ -1,10 +1,10 @@
-#Truex Modular HTML5 Template
+# Truex Modular HTML5 Template
 A template to help simplify the process of creating Truex ads in HTML5.
 
 > This template is a **work in progress**. I'm not a born super coder so feel free to improve/fix/optimize it :D
 Based on **Antonio M. Quitoriano's** awesome TXM Template.
 
-##How To Use
+## How To Use
 >Note: This only describes the Javascript part of building an HTML5 Truex Ad. I assume that you already have the HTML markup and your CSS stylesheets setup.
 
 1.) Locate the **TXConfig** module **(line #26)** inside **edit/logic-modular.js** and start updating the following variables. Please note that the urls that you will be using must be from the Truex server via **Asset Uploader**. 
@@ -61,26 +61,26 @@ var TXCreative = (function () {
 ```
 3.) That's all there is to it. Run the **index.html** from the root directory to test your creative locally.
 
-##Template Features
+## Template Features
 * It abstracts Truex's boilerplate codes from the main ad's logic.
 * Helps the developer to focus more on coding the creative's main logic.
 * Creates a **central** location for custom codes.
 * **Modular** approach for readability and extensibility.
 
-##Template Modules
+## Template Modules
 Currently, this template is divided into 4 modules:
 
-####TXConfig Module
+#### TXConfig Module
 The TXConfig module is the configuration / settings of every TrueX HTML5 builds. This is where you will set all the stuff your creative will use like images, sounds, js, css, and html markup.
 
-####TXAd Module
+#### TXAd Module
 The TXAd module is where the main initialization of the TrueX Ad takes place. These includes anything from the actual loading of assets (images, sounds, etc) to setting up the "Ad Lifecycle" of your creative. You don't have to touch this unless needed.
 
-####TXVideo Module
+#### TXVideo Module
 The TXVideo Module handles everything about **video loading** and **quartiles tracking**.
 _Vast Video support to be implemented._
 
-####TXCreative Module
+#### TXCreative Module
 The TXCreative Module is the **MEAT** of your creative. This is where all of your **CUSTOM** codes will go, meaning, all of your creative's "logic" will be run through here. This makes it much more easier to build an ad since you have a "central" location for all your custom codes. 
 
 You can also write your main creative's logic on a separate javascript file and call it's init function inside this module.
